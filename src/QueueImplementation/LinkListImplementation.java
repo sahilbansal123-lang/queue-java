@@ -19,7 +19,7 @@ package QueueImplementation;
 //          involve processing items in a specific order, such as breadth-first search or scheduling tasks in a
 //          multitasking operating system.
 
-public class QueueClass {
+public class LinkListImplementation {
 
     // Created a node
     static class Node {
