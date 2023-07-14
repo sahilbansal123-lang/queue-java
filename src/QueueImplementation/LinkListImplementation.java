@@ -42,7 +42,7 @@ public class LinkListImplementation {
         }
 
 
-        public static void add(int data) {
+         static void add(int data) {
             Node newNode = new Node(data);
             if(isEmpty()) {
                 tail = head = newNode;
@@ -53,18 +53,16 @@ public class LinkListImplementation {
         }
 
 
-        public static int remove() {
+        public static void remove() {
             if(isEmpty()) {
                 System.out.println("empty queue");
-                return -1;
+                return;
             }
-            int front = head.data;
             //single node
             if(head == tail) {
                 tail = null;
             }
             head = head.next;
-            return front;
         }
 
 
@@ -77,18 +75,17 @@ public class LinkListImplementation {
             return head.data;
         }
     }
-    public static void main(String args[]) {
-        Queue q = new Queue();
-        q.add(1);
-        q.add(2);
-        q.add(3);
-        q.add(4);
-        q.add(5);
+    public static void main(String[] args) {
+        Queue.add(1);
+        Queue.add(2);
+        Queue.add(3);
+        Queue.add(4);
+        Queue.add(5);
 
 
-        while(!q.isEmpty()) {
-            System.out.println(q.peek());
-            q.remove();
+        while(!Queue.isEmpty()) {
+            System.out.println(Queue.peek());
+            Queue.remove();
         }
     }
 }
