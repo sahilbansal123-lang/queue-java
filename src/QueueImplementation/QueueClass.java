@@ -1,4 +1,4 @@
-
+package QueueImplementation;
 //    Queue: is a data structure in computer science that represents a collection of elements arranged in a linear
 //           order,similar to a stack. The key difference is that a queue follows the First-In-First-Out (FIFO)
 //           principle, where the first element added to the queue is the first one to be removed.
